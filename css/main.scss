@@ -8,3 +8,32 @@
 /**************************/
 /* Coding may happen here */
 /**************************/
+
+#home {
+    @include outer-container;
+    margin-top: 2em;
+
+    .feature-item {
+        @include media($medium-screen) {
+            @include span-columns(2);
+        }
+        @include media($large-screen) {
+            @include span-columns(4);
+        }
+    }
+}
+
+.header {
+    height: 120px;
+    background: $light-gray;
+    
+    .inner-header {
+        @include outer-container;
+    }
+}
+
+.footer {
+    @include outer-container;
+
+    color: $medium-gray;
+}
