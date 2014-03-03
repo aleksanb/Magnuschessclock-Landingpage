@@ -10,3 +10,4 @@
 $small-screen: new-breakpoint(min-width em(540) 4);
 $medium-screen: new-breakpoint(min-width em(760) 6);
 $large-screen: new-breakpoint(min-width em(920) 12);
+$huge-screen: new-breakpoint(min-width em(1440) 12);

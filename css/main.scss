@@ -24,21 +24,20 @@
 }
 
 .header {
-    height: 200px;
-    background: $light-gray url(http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528c8f581f45e_1.JPG) no-repeat;
+    height: 0;
+    padding-bottom: 56.73611111%;
+    background: $light-gray url(../images/banner.jpg) no-repeat;
     background-size: cover;
-    
-    .inner-header {
-        @include outer-container;
+
+    @include hidpi(1.5) {
+        background-image: url(../images/banner@2x.jpg);
+    }
+    @include media($huge-screen) {
+        background-image: url(../images/banner@2x.jpg);
     }
 
-    .title {
-        text-align: center;
-        line-height: 200px;
-
-        a {
-            color: white;
-        }
+    .inner-header {
+        @include outer-container;
     }
 }
 
