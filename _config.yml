@@ -1,6 +1,7 @@
 name: Magnus Chess Clock
 markdown: redcarpet
 pygments: true
+baseurl: /chess/
 
 exclude: [Gemfile, Gemfile.lock]
 
